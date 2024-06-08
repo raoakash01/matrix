@@ -1,0 +1,128 @@
+
+.headP{
+    text-align: center;
+    color: rgb(8, 0, 0);
+    font-size: 3vw;
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+}
+
+.project{
+    display:flex;
+    
+}
+
+.projectH{
+    color: rgb(8, 0, 0);
+    font-size: 2vw;
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+}
+
+.proP{
+    color: rgb(8, 0, 0);
+    font-size: 1.5vw;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+}
+
+.techs{
+    display: flex;
+    align-items: center;
+    
+}
+
+.node{
+    width: 6rem;
+    height: 5.5rem;
+    margin-left: 2rem;
+}
+
+.express{
+    width: 8.5rem;
+    height: 4rem;
+    margin-left: 2rem;
+}
+
+.mongo{
+    width: 7rem;
+    height: 3.5rem;
+    margin-left: 2rem;
+}
+
+.button{
+    background-color: rgb(8, 0, 0);
+    color: aliceblue;
+    font-size: 1rem;
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    border-radius: 1vw;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.button:hover{
+    background-color: rgb(240, 255, 244);
+    color: rgb(8, 0, 0);
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    background: linear-gradient(45deg, #000000, #030003, #01de10);
+
+}
+
+.probold{
+    color: red;
+}
+
+.party2{
+    width: 20rem;
+    height: 32rem;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+.project2{
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ochi2{
+    width: 30rem;
+    height: 32rem;
+    margin-right: 4rem;
+    margin-top: 4rem;
+}
+
+.project3{
+    display: flex;
+    margin-top: 5rem;
+}
+
+.htmllogo {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+}
+.csslogo {
+    width: 3rem;
+    height: 4rem;
+    margin-left: 1rem;
+}
+.bootstaplogo {
+    width: 9rem;
+    height: 3rem;
+    margin-left: 1rem;
+}
+
+.pro3{
+    width: 55rem;
+    height: 35rem;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}

@@ -1,0 +1,128 @@
+.bgvid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1000;
+}
+
+.bg1{
+    display: none;
+}
+
+.sound{
+    position: absolute;
+   top: 5vh;
+    left: 5vw;
+    font-size: 1vw;
+    color: rgb(91, 231, 66);
+    background-color: black;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    box-shadow: rgb(209, 222, 235) 2vw 4vw 10vw -3vw;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.morpheus{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 37vw;
+    height: 37vw;
+}
+
+.choose{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight:600;
+    font-style: normal;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    color: rgb(5, 247, 66);
+    z-index: 1000;
+}
+
+.red{
+    position: absolute;
+    top: 67%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.011);
+    height: 1.2vw;
+    width: 2.2vw;
+    border-radius: 1vw;
+    border:none;
+    cursor: pointer;
+    z-index: 1000;
+}
+.blue{
+    position: absolute;
+    top: 66.5%;
+    left: 61.5%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 255, 0.011);
+    height: 1.2vw;
+    width: 2.2vw;
+    border-radius: 1vw;
+    border:none;
+    cursor: pointer;
+    z-index: 1000;
+}
+.red:hover{
+    box-shadow: rgba(227, 2, 2, 0.17) 0px -23px 25px 0px inset, rgba(227, 2, 2, 0.17) 0px -36px 30px 0px inset, rgba(227, 2, 2, 0.17) 0px -79px 40px 0px inset, rgba(227, 2, 2, 0.17) 0px 2px 1px, rgba(227, 2, 2, 0.17) 0px 4px 2px, rgba(227, 2, 2, 0.17) 0px 8px 4px, rgba(227, 2, 2, 0.17) 0px 16px 8px, rgba(227, 2, 2, 0.17) 0px 32px 16px;
+}
+
+.blue:hover{
+    box-shadow: rgba(13, 2, 227, 0.17) 0px -23px 25px 0px inset, rgba(13, 2, 227, 0.17) 0px -36px 30px 0px inset, rgba(13, 2, 227, 0.17) 0px -79px 40px 0px inset, rgba(13, 2, 227, 0.17) 0px 2px 1px, rgba(13, 2, 227, 0.17) 0px 4px 2px, rgba(13, 2, 227, 0.17) 0px 8px 4px, rgba(13, 2, 227, 0.17) 0px 16px 8px, rgba(13, 2, 227, 0.17) 0px 32px 16px;
+}
+
+.head{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight:600;
+    font-style: normal;
+    font-size: 3vw;
+    color: rgb(5, 247, 66);
+    z-index: 1000;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.11);
+    
+}
+
+.redText{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight:900;
+    font-style: normal;
+    font-size: 2vw;
+    color: rgb(247, 5, 5);
+    z-index: 1000;
+    text-align: left;
+    background-color: rgba(240, 248, 255, 0.11);
+    border-radius: 10%;
+}
+
+.blueText{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight:900;
+    font-style: normal;
+    font-size: 2vw;
+    color: rgb(0, 0, 255);
+    z-index: 1000;
+    text-align: right;
+    background-color: rgba(240, 248, 255, 0.11);
+    border-radius: 10%;
+}
+
+.redblue{
+    display:flex;
+    justify-content: space-between;
+}
