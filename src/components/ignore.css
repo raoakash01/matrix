@@ -16,6 +16,10 @@
     font-family: "Cinzel", serif;
     font-style: normal;
     font-size: 4vw;
-    color: rgb(222, 225, 234);
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    mix-blend-mode: difference;
     z-index: 1000;
 }
