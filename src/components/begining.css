@@ -1,6 +1,17 @@
 /* Base Styles */
+.b1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
 .bgvid {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -28,12 +39,18 @@
 }
 
 .morpheus {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 37vw;
-    height: 37vw;
+    margin: auto;
+    width: 38rem;
+    height: 42rem;
+    background-image: url(../assets/morpheus.png);
+    background-size: 100% 100%;
+    margin-top: -7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding-left: 9rem;
+    padding-right: 9.2rem;
 }
 
 .choose {
@@ -51,8 +68,7 @@
 }
 
 .red, .blue {
-    position: absolute;
-    transform: translate(-50%, -50%);
+    margin-top: 18rem;
     height: 1.2vw;
     width: 2.2vw;
     border-radius: 1vw;
@@ -87,10 +103,13 @@
     font-weight: 600;
     font-style: normal;
     font-size: 3vw;
-    color: rgb(5, 247, 66);
+    color: rgb(255, 255, 255);
     z-index: 1000;
     text-align: center;
-    background-color: rgba(240, 248, 255, 0.11);
+    background: linear-gradient(135deg, rgb(0, 0, 0), rgb(81, 255, 0));
+   
+    mix-blend-mode: difference;
+
 }
 
 .redText, .blueText {
@@ -106,80 +125,158 @@
 
 .redText {
     color: rgb(247, 5, 5);
-    text-align: left;
 }
 
 .blueText {
     color: rgb(0, 0, 255);
-    text-align: right;
+    margin-left: 25rem;
 }
 
 .redblue {
     display: flex;
+    width: 100%;
     justify-content: space-between;
+    width: 100%;
 }
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
+    .b1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 55rem;
+        align-items: center;
+    }
     .morpheus {
-        width: 45vw;
-        height: 45vw;
+        width: 30rem;
+        height: 35rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
     }
     .choose {
-        font-size: 5vw;
+        font-size: 3vw;
+    }
+    .head {
+        font-size: 2.5vw;
+    }
+    .redText, .blueText {
+        font-size: 1.5vw;
+    }
+    .red, .blue {
+        height: 1.5vw;
+        width: 2.5vw;
     }
 }
 
 @media (max-width: 768px) {
+    .b1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 55rem;
+        align-items: center;
+    }
     .sound {
         font-size: 2vw;
+        padding: 1vw;
+        border-radius: 2vw;
     }
     .morpheus {
-        width: 50vw;
-        height: 50vw;
+        margin-top: 15rem;
+        width: 35rem;
+        height: 50rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
     .choose {
-        font-size: 6vw;
+        font-size: 4vw;
+    }
+    .head {
+        font-size: 5vw;
+    }
+    .redText, .blueText {
+        font-size: 4vw;
     }
     .red, .blue {
         height: 2vw;
         width: 3vw;
     }
-    .red {
-        top: 57%;
-        left: 28%;
+    .redText {
+        margin-left: 0;
     }
-    .blue {
-        top: 57%;
-        left: 71%;
+    .blueText {
+        margin-left: 15rem;
     }
-    .head {
-        font-size: 4vw;
-    }
-    .redText, .blueText {
-        font-size: 3vw;
+    .redblue{
+        margin-top: 4rem;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 @media (max-width: 480px) {
+    .b1{
+        display: inline;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        align-items: center;
+    }
+    .bgvid {
+
+        width:min-content;
+        height: 100%;
+        width: 100vw;
+        object-fit:cover;
+        
+        overflow: hidden;
+    }
     .sound {
         font-size: 3vw;
+        padding: 2vw;
+        margin-top: 3.5rem;
+        border-radius: 3vw;
     }
     .morpheus {
-        width: 70vw;
-        height: 70vw;
+        margin-top: 1rem;
+        width: 14.7rem;
+        height: 27rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 4rem;
     }
     .choose {
-        font-size: 8vw;
+        margin-top: 10rem;
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: "Cinzel", serif;
+        text-align: center;
+        mix-blend-mode: difference;
+        filter:hue-rotate(100deg);
+        
+    }
+    .head {
+        margin-top: 0;
+        font-size: 7vw;
+    }
+    .redText, .blueText {
+        font-size: 5vw;
+
     }
     .red, .blue {
         height: 3vw;
         width: 4vw;
     }
-    .head {
-        font-size: 5vw;
+    .redText {
+        margin-left: 0;
+        
+        margin-top: 1rem;
     }
-    .redText, .blueText {
-        font-size: 4vw;
+    .blueText {
+        margin-left: 0;
+        margin-top: 1rem;
     }
 }
