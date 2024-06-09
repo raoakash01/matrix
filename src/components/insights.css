@@ -304,12 +304,15 @@
   margin-left: 0;
 }
 .certH{
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
+}
+.Chead{
+  font-size: 3rem;
 }
 
 .certP{
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: center;
 }
 
