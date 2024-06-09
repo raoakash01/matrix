@@ -1,34 +1,47 @@
-.main{
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.main {
     width: 100%;
     height: 100vh;
-    z-index: -1001;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
 }
 
-.intro{
+.intro {
     width: 100%;
-    z-index: -10000;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.welcome{
+.welcome {
     background: linear-gradient(135deg, rgb(22, 119, 238), rgb(255, 237, 0));
-   
     mix-blend-mode: difference;
     filter: invert(1);
     font-family: 'Cinzel', serif;
     font-size: 5rem;
     font-weight: 900;
     text-align: center;
-    z-index: 1000;
+    z-index: 1;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
 }
 
-.nav{
-    display: flex;
-    padding-top: 1.5rem;
-    justify-content: space-around;
-}
-
-.link{
+.link {
     color: rgb(4, 227, 8);
     font-family: 'Cinzel', serif;
     font-size: 1rem;
@@ -37,16 +50,48 @@
     text-decoration: none;
 }
 
-.center{
+.center {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    position: relative;
 }
 
-.akash{
-    width: 30rem;
-    height: 41rem;
-    margin-top: 6rem;
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .welcome {
+        font-size: 4rem;
+    }
 }
 
+@media (max-width: 992px) {
+    .welcome {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        font-size: 2rem;
+        padding: 0rem;
+    }
+
+    .link {
+        font-size: 0.875rem;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .welcome {
+        font-size: 2rem;
+        padding: 0rem;
+        width: 20rem;
+    }
+
+    .link {
+        font-size: 0.75rem;
+        margin-left: 0.5rem;
+    }
+}

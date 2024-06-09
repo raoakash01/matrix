@@ -32,7 +32,7 @@ import ricelogo from "../assets/ricelogo.png";
 import dia from "../assets/dia.jpg";
 export default function Insights() {
     return (
-        <div>
+        <div className="wholepage">
             <Nav />
             <div className="insights">
                 <div>
@@ -46,8 +46,8 @@ export default function Insights() {
                 
                 </div>
                 <div className="textbutton">
-                <h1 className="introI">Explore my projects on </h1><Link className=" git" exact  to="https://github.com/raoakash01"><i class="fab fa-github"></i> Github</Link>
-                </div><div className="textbutton"><h1 className="introI"> connect with me on </h1><Link className="linked" exact to="https://www.linkedin.com/in/akash-rao-here/"><i class="fab fa-linkedin"></i> LinkedIn</Link></div>
+                <h1 className="introI">Explore my projects on </h1><Link className=" git mobile" exact  to="https://github.com/raoakash01"><i class="fab fa-github "></i> Github</Link>
+                </div><div className="textbutton"><h1 className="introI"> connect with me on </h1><Link className="linked mobile" exact to="https://www.linkedin.com/in/akash-rao-here/"><i class="fab fa-linkedin"></i> LinkedIn</Link></div>
                 </div>
                 <img className="myimg" src={akash}></img>
             </div>
@@ -97,7 +97,10 @@ export default function Insights() {
                     
                 </div>
                 <div className="cert">
-                    
+                <div className="textcer Mcert">
+                    <h1 className="certH">Managing Project Risks and Changes</h1>
+                    <p className="certP">by University of California, Irvine</p>
+                    </div>
                     
                     <div class="flip-card">
                     <div class="flip-card-inner">
@@ -115,7 +118,7 @@ export default function Insights() {
                     </div>
                 </div>
                 <div className="cert">
-                    <div className="textcer">
+                    <div className="textcer Lcert">
                     <h1 className="certH"> Engineering Project Management: Scope, Time and
                     Cost Management</h1>
                     <p className="certP">by RICE University</p>

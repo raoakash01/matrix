@@ -1,242 +1,347 @@
-.insights{
+.insights {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.introH {
+  font-family: "Cinzel", serif;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.name {
+  color: rgb(4, 227, 8);
+}
+
+.des {
+  font-family: "Cinzel", serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.details {
+  width: 60rem;
+}
+
+.introI {
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.textbutton {
+  display: flex;
+  align-items: center;
+}
+
+.git {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: blueviolet;
+}
+
+.linked {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: rgb(71, 132, 202);
+}
+
+.Shead {
+  font-family: "Cinzel", serif;
+  font-size: 5rem;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.Skills {
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+
+.imgtech {
+  width: 10rem;
+  height: 10rem;
+}
+
+.techimgs {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.tech2 {
+  width: 7rem;
+  height: 7rem;
+  margin-left: 1rem;
+}
+
+.tech3 {
+  width: 9rem;
+  height: 7rem;
+  margin-left: 2rem;
+}
+
+.tech4 {
+  width: 9.5rem;
+  height: 6rem;
+  margin-left: 2rem;
+}
+
+.tech5 {
+  width: 12rem;
+  height: 7rem;
+}
+
+.tech6 {
+  width: 15rem;
+  height: 5rem;
+}
+
+.tech7 {
+  width: 16rem;
+  height: 12rem;
+}
+
+.Chead {
+  font-family: "Cinzel", serif;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.cert {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.certH {
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(4, 227, 8);
+}
+
+.certP {
+  font-family: "Cinzel", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.flip-card {
+  width: 50rem;
+  height: 35rem;
+  margin: 20px;
+  perspective: 1000px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.8s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #000000;
+  color: rgb(255, 254, 254);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.certimg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.ucilogo {
+  width: 20rem;
+  height: 20rem;
+}
+
+.apnalogo {
+  width: 30rem;
+  height: 30rem;
+}
+
+.myimg {
+  width: 50rem;
+  height: 40rem;
+  margin-bottom: -6rem;
+  margin-right: -2.6rem;
+}
+
+.textcer {
+  width: 50rem;
+  text-align: left;
+}
+
+.cv {
+  display: flex;
+  justify-content: center;
+  background: #000;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.buttonCV {
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+.buttonCV:hover {
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+}
+
+.dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Responsive styles */
+.Mcert{
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .wholepage {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column; /* Ensure elements stack vertically */
     align-items: center;
-}
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  .nav{
+    width: 100%;
+    padding-right: 5rem;
+  }
 
-.introH{
-    font-family: "Cinzel", serif;
-    font-size: 5rem;
-    font-weight: 500;
-}
+  .insights {
+    width: 100%; /* Prevent horizontal scrolling */
+  }
 
-.name{
-    color: rgb(4, 227, 8);
-}
+  .details {
+    width: 100%; /* Adjust width to fit the screen */
+  }
 
-.des{
-    font-family: "Cinzel", serif ;
-    font-size: 1.3rem;
-    font-weight: 500;
-}
-
-.details{
-    width: 60rem;
-}
-
-.introI{
-    font-family: "Cinzel", serif;
-    font-size: 2rem;
-    font-weight: 100;
-}
-
-.textbutton{
-    display: flex;
-    align-items: center;
-}
-
-.git{
-    font-size: 2rem;
-    margin-left: 1rem;
-    color: blueviolet;
-}
-
-
-
-.linked{
-    font-size: 2rem;
-    margin-left: 1rem;
-    color: rgb(71, 132, 202);
-}
-
-.Shead{
-    font-family: "Cinzel", serif;
-    font-size: 5rem;
-    font-weight: 500;
+  .introH {
     text-align: center;
-    color: rgb(255, 255, 255);
-}
+    font-size: 2rem;
+  }
 
-.Skills{
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-}
+  .des {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    font-size: 1rem;
+  }
 
-.imgtech{
-    width: 10rem;
-    height: 10rem;
-}
-
-.techimgs{
-    display: flex;
-    align-items: center;
-    margin-left: 2rem;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 2rem;
-    margin-right: 2rem;
-}
-
-.tech2{
-    width: 7rem;
-    height: 7rem;
-    margin-left: 1rem;
-}
-
-.tech3{
-    width: 9rem;
-    height: 7rem;
-    margin-left: 2rem;
-}
-
-.tech4{
-    width: 9.5rem;
-    height: 6rem;
-    margin-left: 2rem;
-}
-
-.tech5{
-    width: 12rem;
-    height: 7rem;
-}
-
-.tech6{
-    width: 15rem;
-    height: 5rem;
-}
-
-.tech7{
-    width: 16rem;
-    height: 12rem;
-}
-
-.Chead{
-    font-family: "Cinzel", serif;
-    font-size: 4rem;
+  .introI {
+    font-size: 1.2rem;
     font-weight: 500;
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
+  }
 
+  .mobile {
+    font-size: 1.5rem;
+  }
+
+  .myimg {
+    width: 50rem;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image doesn't overflow container */
+    margin: 0 0 0 0;
+  }
+
+  .dialog {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  .certifcates{
+    align-items: center;
+  }
 .cert{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem
+  width: 100%;
+  margin-left: 0;
 }
-
 .certH{
-    font-family: "Cinzel", serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: rgb(4, 227, 8);
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .certP{
-    font-family: "Cinzel", serif;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
+  font-size: 1rem;
+  text-align: center;
 }
-.flip-card {
-    /* Set desired dimensions for the card */
-    width: 50rem;
-    height: 35rem;
-    margin: 20px;
-    perspective: 1000px; /* Adjust for desired 3D effect depth */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    transition: transform 0.8s ease-in-out;  /* Smooth flip animation */
-    transform-style: preserve-3d; /* Enable 3D transformation */
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg); /* Flips the card on hover */
-  }
-  
-  .flip-card-front,
-  .flip-card-back {
-    display: flex ;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; /* Ensures smooth flipping */
-  }
-  
-  .flip-card-front {
-    /* Style the front side of the card */
-    background-color: #000000;
-    color: rgb(255, 254, 254);
-  }
-  
-  .flip-card-back {
-    transform: rotateY(180deg); /* Initially hides the back */
-  }
-  
-  .certimg {
-    /* Style the certificate image */
-    width: 100%;
-    height: auto;  /* Adjust image height as needed */
-    object-fit: cover;  /* Scales image to fit the container */
-  }
-  
-  .ucilogo{
-    width: 20rem;
-    height: 20rem;
-  }
-  .apnalogo{
-    width: 30rem;
-    height: 30rem;
-  }
 
-  .myimg{
-    width: 50rem;
-    height: 40rem;
-    margin-bottom: -6rem;
-    margin-right: -2.6rem;
-  }
+.flip-card{
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
 
-  .textcer{
-    width: 50rem;
-    text-align: left;
-  }
+.apnalogo{
+  width: 20rem;
+  height: 20rem;
+}
 
-  .cv{
-    display: flex;
-    justify-content: center;
-    background: #000;
-    align-items: center;
-    padding-top: 1rem;
-  }
+.Mcert{
+  display: inline;
+}
 
-  .buttonCV{
-    background-color: white;
-    margin-bottom: 1rem;
-  }
+.Lcert{
+  display: none;
+}
 
-  .buttonCV:hover{
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-  } 
+.ucilogo{
+  width: 15rem;
+  height: 15rem;
+}
+.cv{
+  width: 100%;
+}
 
-  .dialog{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.footer{
+  width: 100%;
+}
+  /* Adjust other styles as needed */
+}

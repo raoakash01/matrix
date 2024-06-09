@@ -99,7 +99,7 @@ on clean design and user experience.</p>
             </div>
             <div className="images">
                 <img className="party1" src={horse1}></img>
-                <img className="ochi2" src={horselogo}></img>
+                <img className="horselogo" src={horselogo}></img>
                 
                 <img className="ochi2" src={horse3}></img>
                 <img className="party2" src={horse2}></img>
