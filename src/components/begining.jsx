@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import bg1 from "../assets/bg1.mp3";
 import "./begining.css";
 import { Link } from "react-router-dom";
+import MatrixEffect from "./matrixrain";
 
 export default function Begining() {
   const audioRef = useRef(null);
@@ -21,6 +22,10 @@ export default function Begining() {
 
   return (
     <div className="b1">
+      <div className="back">
+      <MatrixEffect className="matrixeffect"  />
+      </div>
+      
       <div className="firstline">
       <button className="sound" onClick={toggleAudio}>{isPlaying ? 'Sound Off' : 'Sound On'}</button>
         <div className="uppertext">
@@ -34,9 +39,7 @@ export default function Begining() {
       <audio ref={audioRef} muted={!isPlaying} loop>
         <source src={bg1} type="audio/mp3" />
       </audio>
-      <video className="bgvid" autoPlay muted loop>
-        <source src="https://d2rndhzlwwne8a.cloudfront.net/homebg.mov" type="video/mp4" />
-      </video>
+      
       
       
       <div className="morpheus">
