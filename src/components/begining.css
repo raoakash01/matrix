@@ -179,7 +179,6 @@
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
-        height: 55rem;
         align-items: center;
     }
     .sound {
@@ -224,18 +223,12 @@
     .b1{
         display: inline;
         width: 100vw;
-        height: 100vh;
-        overflow: hidden;
+        height: 100%;
         align-items: center;
     }
-    .bgvid {
-
-        width:min-content;
-        height: 100%;
+    .back {
         width: 100vw;
-        object-fit:cover;
-        
-        overflow: hidden;
+        height: 100%;
     }
     .sound {
         font-size: 3vw;
