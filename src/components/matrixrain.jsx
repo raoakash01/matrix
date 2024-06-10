@@ -7,7 +7,7 @@ const MatrixEffect = () => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
 
-    const letters = '01001000 01100101 01111001 00100000 01110100 01101000 01100101 01110010 01100101 00100000 01101001 01110100 00100000 01101001 01110011 00100000 01000001 01101011 01100001 01110011 01101000'.split('');
+    const letters = '01000001 01101011 01100001 01110011 01101000'.split('');
     const fontSize = 10;
     const columns = canvas.width / fontSize;
     const drops = Array(columns).fill(1);
