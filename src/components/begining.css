@@ -70,7 +70,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4vw;
-    color: rgb(5, 247, 66);
+    color: rgb(255, 255, 255);
+    mix-blend-mode: difference;
     z-index: 1000;
 }
 
@@ -129,11 +130,11 @@
 }
 
 .redText {
-    color: rgb(247, 5, 5);
+    color: rgb(255, 255, 255);
 }
 
 .blueText {
-    color: rgb(0, 0, 255);
+    color: rgb(255, 255, 255);
     margin-left: 25rem;
 }
 
