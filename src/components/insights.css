@@ -3,7 +3,10 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 2rem;
 }
+
+
 
 .introH {
   font-family: "Cinzel", serif;
@@ -259,6 +262,7 @@
 
   .insights {
     width: 100%; /* Prevent horizontal scrolling */
+    margin-top: 5rem;
   }
 
   .details {

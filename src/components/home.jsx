@@ -6,8 +6,9 @@ import Footer from "./footer";
 export default function Home() {
     return (
         <div className="main">
-            <Nav />
+            
             <div className="center">
+            <Nav />
                 <video className="intro" autoPlay loop>
                     <source src="https://d2rndhzlwwne8a.cloudfront.net/intro.mp4" type="video/mp4" />
                 </video>

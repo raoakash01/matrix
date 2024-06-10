@@ -1,59 +1,63 @@
-.contactPage{
-    background: rgb(138,255,145);
-background: linear-gradient(90deg, rgba(138,255,145,1) 0%, rgba(69,255,0,1) 45%, rgba(0,0,0,1) 100%);
-
+.contactPage {
+    background-image: url("../assets/bgcontact.jpg");
+    overflow-x: hidden;
 
 }
 
-.container{
-    margin: 2rem auto ;
+.container {
+    
+    margin: 2rem auto;
     align-items: center;
-    width: 60%;
-    background-color: black;
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.336);
     color: white;
-    padding-bottom: 3rem;
+    border-radius: 10px;
+    overflow-x: hidden;
+    margin-top: 8rem;
 }
 
-.contact{
+.contact {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.contactH{
-    margin-top: 5rem;
-    font-family:"Cinzel", serif ;
+.contactH {
+    margin-top: 2rem;
+    font-family: "Cinzel", serif;
 }
 
-.contactP{
-    font-size: 2rem;
+.contactP {
+    font-size: 1.5rem;
     font-family: "Cinzel", serif;
-    margin: 1rem 0rem;
+    margin: 1rem 0;
     line-height: 1.5;
     font-weight: 100;
 }
 
-.want{
-    font-weight:200;
-    font-size: 3rem;
+.want {
+    font-weight: 200;
+    font-size: 2.5rem;
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
 }
-.styleText{
+
+.styleText {
     margin: auto;
     width: max-content;
-    background: linear-gradient(0deg, rgba(69,255,0,1) 100%, rgba(138,255,145,1) 0%);
-    padding: 0rem 1.5rem;
-    border-radius:0 0 15px 15px;
-    box-shadow: inset 5px 10px 20px rgba(0, 0, 0, 0.568);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.103) 100%, rgba(138, 255, 146, 0.11) 0%);
+    padding: 0.1rem 1.5rem;
+    border-radius: 0 0 15px 15px;
+    box-shadow: inset 5px 10px 20px rgba(0, 0, 0, 0.158);
 }
 
-.detailsC{
-    width: 50%;
-    padding: 1rem ;
-
+.detailsC {
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
 }
 
-.iconC{
+.iconC {
     font-size: 2.5rem;
     margin: 1rem;
     color: rgb(255, 255, 255);
@@ -61,128 +65,196 @@ background: linear-gradient(90deg, rgba(138,255,145,1) 0%, rgba(69,255,0,1) 45%,
     transition: all 0.5s ease;
 }
 
-.iconC:hover{
+.iconC:hover {
     color: rgb(30, 255, 0);
     transform: scale(1.2);
     text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.7);
 }
 
-.mail{
+.mail {
     display: flex;
     align-items: center;
 }
 
-.mailH{
-    margin-left: 0.2rem;
+.mailH {
+    margin-left: 0.5rem;
     font-size: 1.5rem;
     font-weight: 100;
     color: white;
     font-family: "Cinzel", serif;
 }
+.socials{
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
 
-
-.socialH{
-    font-size: 3rem;
+.socialH {
+    font-size: 2.5rem;
     font-weight: 100;
     color: white;
     font-family: "Cinzel", serif;
 }
 
-.line{
-    width: 60%;
+.line {
+    margin: 0.5rem 0;
+    width: 80%;
     height: 1px;
     background-color: white;
-    margin: 0rem 0rem;
+    text-align: left;
 }
 
-.socialicons{
-    width: 60%;
+.socialicons {
+    width: 80%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    margin: 1rem 0rem;
 }
 
-.form{
+.form {
     width: 100%;
     background: white;
     padding: 1rem;
     color: black;
     border-radius: 20px;
-    box-shadow:inset 0px 5px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 2rem;
 }
 
-.formH{
+.formH {
     font-size: 2rem;
     font-weight: 100;
     color: black;
     font-family: "Cinzel", serif;
+    text-align: center;
 }
 
-.lineForm{
+.lineForm {
     width: 100%;
     height: 2px;
     background-color: rgb(0, 0, 0);
-    margin: 0rem 0rem;
+    margin: 0.5rem 0;
 }
-/* Target the form element within the .contactForm class */
+
 .contactForm form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 3rem auto; /* Center the form horizontally */
-    padding: 1rem; /* Add some padding for better spacing */
-    border: 2px solid #000000; /* Subtle border for visual separation */
-    border-radius: 5px; /* Consistent rounded corners */
-  }
-  
-  /* Target all input and textarea elements within .contactForm */
-  .contactForm input,
-  .contactForm textarea {
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.contactForm input,
+.contactForm textarea {
     width: 100%;
     font-size: 1rem;
     font-weight: 500;
-    margin-bottom: 1rem; /* Maintain spacing */
-    padding: 0.75rem 1rem; /* Adjust padding for better user experience */
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
     border: 2px solid #000000;
-    border-radius: 5px; /* Consistent rounded corners */
+    border-radius: 5px;
     font-family: "Cinzel", serif;
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-  }
-  
-  /* Target only the textarea element within .contactForm */
-  .contactForm textarea {
+    box-sizing: border-box;
+}
+
+.contactForm textarea {
     height: 10rem;
-    resize: vertical; /* Allow users to resize the textarea */
-  }
-  
-  /* Target the button element within .contactForm */
-  .contactForm button {
+    resize: vertical;
+}
+
+.contactForm button {
     background-color: #4CAF50;
     color: white;
-    padding: 1rem 2rem; /* Increase horizontal padding for better button size */
+    padding: 1rem 2rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.2s ease; /* Add a subtle hover effect */
-  }
-  
-  .contactForm button:hover {
-    background-color: #3e8e41; /* Adjust hover color for visual feedback */
-  }
-  
-  /* ... (Improved CSS from previous response) ... */
+    transition: background-color 0.2s ease;
+}
+
+.contactForm button:hover {
+    background-color: #3e8e41;
+}
 
 .contactForm input::placeholder,
 .contactForm textarea::placeholder {
-  color: #000000;
-  font-weight: 500;
-  font-family: "Cinzel", serif;
-  opacity: 1;
+    color: #000000;
+    font-weight: 500;
+    font-family: "Cinzel", serif;
+    opacity: 1;
 }
 
-.form1{
+.form1 {
     background-color: #000000;
     margin-bottom: 1rem;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 88%;
+    }
+    .nav{
+        padding-right: 5rem;
+    }
+    .want{
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
+    .contactP {
+        font-size: 1rem;
+    }
+
+    .want {
+        font-size: 2rem;
+    }
+
+    .formH{
+        font-size: 1.5rem;
+    }
+    .socialH {
+        font-size: 2rem;
+    }
+
+    .iconC {
+        font-size: 2rem;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .detailsC, .contactForm {
+        width: 80%;
+        align-items: center;
+    }
+    
+    .contactForm{
+        padding-left: 5%;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .contactP {
+        font-size: 0.8rem;
+    }
+
+    .want {
+        font-size: 1.5rem;
+    }
+
+    .socialH {
+        font-size: 1.5rem;
+    }
+
+    .iconC {
+        font-size: 1.5rem;
+    }
+
+    .mailH {
+        font-size: 1rem;
+    }
+}
