@@ -307,8 +307,6 @@
 .cert{
   width: 100%;
   margin-left: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .certH{
   font-size: 1rem;
@@ -336,7 +334,6 @@
 
 .Mcert{
   display: inline;
-  padding:0 1.2rem;
 }
 
 .Lcert{
@@ -355,4 +352,16 @@
   width: 100%;
 }
   /* Adjust other styles as needed */
+}
+
+
+@media screen and (max-width: 480px) {
+  /* Adjust styles for smaller screens */ 
+  .certP{
+    font-size: 0.6rem;
+  }
+
+  .certH{
+    font-size: 0.8rem;
+  }
 }
