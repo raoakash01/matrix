@@ -1,3 +1,17 @@
+.projectpage{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.pmob{
+    display: none;
+}
 
 .headP{
     text-align: center;
@@ -74,9 +88,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-bottom: 2rem;
-    background: linear-gradient(45deg, #000000, #030003, #01de10);
+    padding-bottom: 2rem;background: linear-gradient(315deg, rgb(8, 146, 123) 3%, rgb(0, 0, 0) 38%, rgba(48,238,226,1) 68%, rgb(6, 165, 41) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
 
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 .probold{
@@ -125,8 +153,8 @@
     margin-left: 1rem;
 }
 .bootstaplogo {
-    width: 9rem;
-    height: 3rem;
+    width: 7.5rem;
+    height: 2.8rem;
     margin-left: 1rem;
 }
 
@@ -135,4 +163,197 @@
     height: 35rem;
     margin-left: 4rem;
     margin-top: 4rem;
+}
+/* Existing CSS content... */
+
+@media (max-width: 1200px) {
+    .project, .project3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .node, .express, .mongo, .cloud, .reactjs, .tailwind, .gsap, .framer, .htmllogo, .csslogo, .jslogo, .bootstrap, .firebase, .analytics, .python, .media, .pandas, .opencv {
+        width: 4rem;
+        height: auto;
+        margin-left: 1rem;
+    }
+
+    .button {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+        border-radius: 0.5vw;
+        margin-bottom: 1rem;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .party2, .ochi2, .horselogo, .pro3 {
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 1rem;
+        margin-right: 0;
+    }
+
+    .proNav {
+        margin-bottom: 3rem;
+    }
+
+    .projectH {
+        font-size: 1.5vw;
+    }
+
+    .proP {
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .project{
+        padding: 0rem 1rem;
+    }
+    .project2{
+        margin-left: -0.5rem;
+    }
+    
+    .project3{
+        padding: 0rem 1rem;
+    }
+    .pmob{
+        display: block;
+    }
+    .lmob{
+        display: none;
+    }
+    .proNav {
+        margin-bottom: 10rem;
+    }
+    .projectH {
+        font-size: 4vw;
+    }
+
+    .proP {
+        font-size: 3vw;
+    }
+
+    .button {
+        font-size: 2vw;
+    }
+
+    .node, .express, .mongo, .cloud, .reactjs, .tailwind, .gsap, .framer, .python, .media, .pandas, .opencv {
+        width: 3rem;
+        height: auto;
+        margin-left: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .proNav {
+        margin-bottom: 5rem;
+        width: 100%;
+    }
+    .headP {
+        font-size: 6vw;
+    }
+
+    .projectH {
+        font-size: 5vw;
+    }
+
+    .proP {
+        font-size: 4vw;
+    }
+
+    .button {
+        font-size: 2.5vw;
+        padding: 0.3rem;
+        border-radius: 0.5vw;
+    }
+    .techs{
+        display: inline-block;
+        padding: 0.2rem 1rem;
+    }
+    .ptech {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 1rem;
+        padding-left: 1.5rem;
+        align-items: flex-start;
+    }
+
+    .cloud, .python, .media, .pandas, .opencv {
+        width: 2rem;
+        height: auto;
+        margin-left: 0.3rem;
+    }
+    .tailwind{
+        width: 10rem;
+        height: auto;
+        margin-left: 1rem;
+    }
+    .gsap{
+        width: 18rem;
+        height: auto;
+    }
+    .framer{
+        width: 10rem;
+        height: auto;
+    }
+    .node, .mongo{
+        width: 6rem;
+        height: auto;
+        margin-left: 0.5rem;
+    }
+
+    .express{
+        width: 10rem;
+        height: auto;
+        margin-left: 0.3rem;
+    }
+
+    .trinity{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 1rem;
+        margin-right: 0;
+    }
+
+    .htmllogo{
+        width: 2rem;
+        height: auto;
+        margin-left: 0.3rem;
+    }
+
+    .csslogo{
+        width: 1.5rem;
+        height: auto;
+        margin-left: 0.3rem;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .party1{
+        width: 20rem;
+        height: 22rem;
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .party2, .ochi2, .horselogo, .pro3 {
+        width: 50%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 1rem;
+        margin-right: 0;
+    }
+
 }

@@ -38,7 +38,7 @@ import Footer from "./footer";
 
 export default function Projects() {
     return (
-        <div>
+        <div className="projectspage">
         <div className="proNav">
             <Nav />
             </div>
@@ -64,19 +64,20 @@ export default function Projects() {
                 <img className="party2" src={party2}></img>
                 </div>
                 <div className="project">
+                <img src={pro1} className="pro1 pmob"></img>
                 <div className="project2">
                 <h1 className="projectH">Project 2 : Ochi</h1>
                 <p className="proP"> Developed a minimalist, single-page web application inspired by the award-winning Ochi.com, focusing 
 on clean design and user experience.</p>
                 <p className="proP">  Levelled-up minimalist design and React proficiency by building a single-page web app </p>
-                <div className="techs">
-                <h1 className="projectH">techs used : </h1><div className="techs"><img className="mongo" src={reactjs}></img><img className="mongo" src={tailwind}></img><img className="mongo" src={gsap}></img><img className="mongo" src={framer}></img></div>
+                <div className="techs ptech">
+                <h1 className="projectH">techs used : </h1><div className="techs"><img className="mongo" src={reactjs}></img><img className="mongo tailwind" src={tailwind}></img><img className="mongo gsap" src={gsap}></img><img className="mongo framer" src={framer}></img></div>
                 </div>
                 
                 <div><button className="button"><Link className="button" to="https://ochi-here.netlify.app/">Live Project</Link></button>  <button className="button" ><Link className="button" to="https://github.com/raoakash01/OCHI">Github</Link></button></div>
                 
                 </div>
-                <img src={pro1} className="pro1"></img>
+                <img src={pro1} className="pro1 lmob"></img>
                 
             </div>
             <div className="images">
@@ -85,7 +86,7 @@ on clean design and user experience.</p>
                 </div> 
 
                 <div className="project3">
-                <img src={pro2} className="pro1"></img>
+                <img src={pro2} className="pro1 trinity"></img>
                 <div>
                 <h1 className="projectH">Project 3 : Myhorse</h1>
                 <p className="proP">Built a responsive website for start-up “HORSE” as a freelance project.</p>
@@ -107,6 +108,8 @@ on clean design and user experience.</p>
                 </div>   
         </div>
         <div className="project">
+            
+        <img src={pro3} className="pro3 pmob"></img>
                 <div className="project2">
                 <h1 className="projectH">Project 4 : Personal Trainer <b className="probold">'AI'</b></h1>
                 <p className="proP"> Created a GUI for determining the correct postures and angles during exercises with the help of camera.</p>
@@ -118,7 +121,7 @@ on clean design and user experience.</p>
                 <div> <button className="button" ><Link className="button" to="https://github.com/raoakash01/Personal_Trainer">Github</Link></button></div>
                 
                 </div>
-                <img src={pro3} className="pro3"></img>
+                <img src={pro3} className="pro3 lmob"></img>
                 
             </div>
             <div className="images">
