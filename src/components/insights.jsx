@@ -112,13 +112,13 @@ export default function Insights() {
                         </div>
                     </div>
                     </div>
-                    <div className="textcer">
+                    <div className="textcer Lcert">
                     <h1 className="certH">Managing Project Risks and Changes</h1>
                     <p className="certP">by University of California, Irvine</p>
                     </div>
                 </div>
                 <div className="cert">
-                    <div className="textcer Lcert">
+                    <div className="textcer ">
                     <h1 className="certH"> Engineering Project Management: Scope, Time and
                     Cost Management</h1>
                     <p className="certP">by RICE University</p>
