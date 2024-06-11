@@ -70,8 +70,8 @@ export default function Projects() {
                 <p className="proP"> Developed a minimalist, single-page web application inspired by the award-winning Ochi.com, focusing 
 on clean design and user experience.</p>
                 <p className="proP">  Levelled-up minimalist design and React proficiency by building a single-page web app </p>
-                <div className="techs ptech">
-                <h1 className="projectH">techs used : </h1><div className="techs"><img className="mongo" src={reactjs}></img><img className="mongo tailwind" src={tailwind}></img><img className="mongo gsap" src={gsap}></img><img className="mongo framer" src={framer}></img></div>
+                <div className="techs">
+                <h1 className="projectH">techs used : </h1><div className="techs"><img className="mongo " src={reactjs}></img><img className="mongo tailwind" src={tailwind}></img><img className="mongo gsap" src={gsap}></img><img className="mongo framer" src={framer}></img></div>
                 </div>
                 
                 <div><button className="button"><Link className="button" to="https://ochi-here.netlify.app/">Live Project</Link></button>  <button className="button" ><Link className="button" to="https://github.com/raoakash01/OCHI">Github</Link></button></div>
@@ -109,7 +109,7 @@ on clean design and user experience.</p>
         </div>
         <div className="project">
             
-        <img src={pro3} className="pro3 pmob"></img>
+        <img src={pro3} className="pro3 pmob p3"></img>
                 <div className="project2">
                 <h1 className="projectH">Project 4 : Personal Trainer <b className="probold">'AI'</b></h1>
                 <p className="proP"> Created a GUI for determining the correct postures and angles during exercises with the help of camera.</p>

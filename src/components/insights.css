@@ -254,6 +254,7 @@
     flex-direction: column; /* Ensure elements stack vertically */
     align-items: center;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    
   }
   .nav{
     width: 100%;
@@ -306,6 +307,8 @@
 .cert{
   width: 100%;
   margin-left: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .certH{
   font-size: 1rem;
