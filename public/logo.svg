@@ -1,0 +1,32 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2641.94494 1523.5756">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+      .cls-3 {
+        font-size: 453.87244px;
+        font-family: ShowcardGothic-Reg, Showcard Gothic;
+      }
+      .cls-3,
+      .cls-4 {
+        fill: #231f20;
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="727.34526" x2="2641.94494" y2="727.34526" gradientUnits="userSpaceOnUse">
+      <stop offset="0.01676" stop-color="#2e3192" />
+      <stop offset="1" stop-color="#93d7ea" />
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="745.57956" y1="1145.72076" x2="2603.45034" y2="1145.72076" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#394b9e" />
+      <stop offset="1" stop-color="#6bbe45" />
+    </linearGradient>
+  </defs>
+  <polygon class="cls-1" points="0 769.892 885.376 62.806 2641.945 0 1191.306 332.27 812.438 328.218 648.33 769.892 2323.858 1454.69 0 769.892" />
+  <polygon class="cls-2" points="745.58 767.866 2603.45 1523.576 1363.52 767.866 745.58 767.866" />
+  <text class="cls-3" transform="translate(794.90142 727.34598)">WWW</text>
+  <polygon class="cls-4" points="2561.634 724.57 905.302 727.345 905.268 686.824 2561.634 724.57" />
+</svg>
