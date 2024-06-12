@@ -5,7 +5,7 @@ import Home from './components/home';
 import Projects from './components/projects';
 import Insights from './components/insights';
 import Contact from './components/contact';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
