@@ -10,23 +10,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <>
-      <Router>
+     <Router>
         <Routes>
           <Route exact path="/" element={<Begining />} />
-        </Routes>
-        <Routes>
           <Route exact path="/ignore" element={<Ignore />} />
-        </Routes>
-        <Routes>
           <Route exact path="/home" element={<Home />} />
-        </Routes>
-        <Routes>
           <Route exact path="/projects" element={<Projects />} />
-        </Routes>
-        <Routes>
           <Route exact path="/insights" element={<Insights />} />
-        </Routes>
-        <Routes>
           <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </Router>
