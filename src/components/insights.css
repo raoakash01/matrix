@@ -332,6 +332,8 @@
   height: 20rem;
 }
 
+
+
 .Mcert{
   display: inline;
 }
@@ -361,8 +363,8 @@
     font-size: 0.6rem;
   }
 
+
   .certH{
     font-size: 0.8rem;
-    text-align: justify;
   }
 }

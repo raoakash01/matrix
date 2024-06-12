@@ -118,10 +118,13 @@ export default function Insights() {
                     </div>
                 </div>
                 <div className="cert">
-                    <div className="textcer ">
-                    <h1 className="certH Lcert"> Engineering Project Management: Scope, Time and
+                    <div className="textcer Lcert ">
+                    <h1 className="certH"> Engineering Project Management: Scope, Time and
                     Cost Management</h1>
-                    <h1 className="certH Mcert"> Engineering Project Management:<br/> Scope, Time and
+                    <p className="certP">by RICE University</p>
+                    </div>
+                    <div className="textcer Mcert ">
+                    <h1 className="certH"> Engineering Project Management:<br/>Scope, Time and
                     Cost Management</h1>
                     <p className="certP">by RICE University</p>
                     </div>
