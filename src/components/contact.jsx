@@ -4,12 +4,21 @@ import Footer from "./footer";
 import './contact.css';
 import { Link } from "react-router-dom";
 import { useForm, ValidationError } from '@formspree/react';
+import { Helmet } from 'react-helmet-async';
 
 export default function Contact() {
     const [state, handleSubmit] = useForm("xjvnqzga");
   
     return (
         <div className="contactPage">
+            <Helmet>
+        <title>My Portfolio Website</title>
+        <meta name="description" content="This is my portfolio website showcasing my projects and skills." />
+        <meta name="keywords" content="portfolio, web developer, projects, skills" />
+        <meta name="author" content="Akash" />
+        <meta property="og:title" content="Akash - Web Developer" />
+        <meta property="og:description" content="This is my portfolio website showcasing my projects and skills." />
+      </Helmet>
             <Nav/>
             <div className="container">
                 <div className="styleText">

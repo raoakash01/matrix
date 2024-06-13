@@ -3,6 +3,7 @@ import bg1 from "../assets/bg1.mp3";
 import "./begining.css";
 import { Link } from "react-router-dom";
 import MatrixEffect from "./matrixrain";
+import { Helmet } from 'react-helmet-async';
 
 export default function Begining() {
   const audioRef = useRef(null);
@@ -25,7 +26,14 @@ export default function Begining() {
       <div className="back">
       <MatrixEffect className="matrixeffect"  />
       </div>
-      
+      <Helmet>
+        <title>My Portfolio Website</title>
+        <meta name="description" content="This is my portfolio website showcasing my projects and skills." />
+        <meta name="keywords" content="portfolio, web developer, projects, skills" />
+        <meta name="author" content="Akash" />
+        <meta property="og:title" content="Akash - Web Developer" />
+        <meta property="og:description" content="This is my portfolio website showcasing my projects and skills." />
+      </Helmet>
       <div className="firstline">
       <button className="sound" onClick={toggleAudio}>{isPlaying ? 'Sound Off' : 'Sound On'}</button>
         <div className="uppertext">

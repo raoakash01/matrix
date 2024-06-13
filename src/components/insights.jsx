@@ -30,9 +30,18 @@ import apnalogo from "../assets/apnalogo.png";
 import ucilogo from "../assets/ucilogo.png";
 import ricelogo from "../assets/ricelogo.png";
 import dia from "../assets/dia.jpg";
+import { Helmet } from 'react-helmet-async';
 export default function Insights() {
     return (
         <div className="wholepage">
+             <Helmet>
+        <title>My Portfolio Website</title>
+        <meta name="description" content="This is my portfolio website showcasing my projects and skills." />
+        <meta name="keywords" content="portfolio, web developer, projects, skills" />
+        <meta name="author" content="Akash" />
+        <meta property="og:title" content="Akash - Web Developer" />
+        <meta property="og:description" content="This is my portfolio website showcasing my projects and skills." />
+      </Helmet>
             <Nav />
             <div className="insights">
                 <div>
