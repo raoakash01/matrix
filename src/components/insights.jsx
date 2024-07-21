@@ -153,7 +153,7 @@ export default function Insights() {
                 
             </div>
             <div className="cv">
-                <button className="button buttonCV"><Link  to="https://drive.google.com/file/d/1-rVlgie-ft8SdpMg8USBrVMIxQflkJ5T/view?usp=sharing">Download CV</Link></button>
+                <button className="button buttonCV"><Link  to="https://drive.google.com/file/d/188ggnWr2yRRz0Q8qooTzSCsXH9gveuti/view?usp=sharing">Download CV</Link></button>
             </div>
             <div className="dialog">
                 <img className="dialogImg" src={dia}></img>
